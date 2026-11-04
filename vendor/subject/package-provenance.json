@@ -1,0 +1,25 @@
+{
+  "name": "onnxruntime-web",
+  "version": "1.18.0",
+  "dist": {
+    "shasum": "cd46268d9472f89697da0a3282f13129f0acbfa0",
+    "tarball": "https://registry.npmjs.org/onnxruntime-web/-/onnxruntime-web-1.18.0.tgz",
+    "fileCount": 392,
+    "integrity": "sha512-o1UKj4ABIj1gmG7ae0RKJ3/GT+3yoF0RRpfDfeoe0huzRW4FDRLfbkDETmdFAvnJEXuYDE0YT+hhkia0352StQ==",
+    "signatures": [
+      {
+        "sig": "MEUCIQDQJQFQEx2rqIucV7kT+uH/LJyjtVVyareTPBWIulxc+QIgLBLkkppavax6Lgah2nDCxtm4RDcLUbLzbMqjqqqTO3w=",
+        "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+      }
+    ],
+    "unpackedSize": 151377357
+  },
+  "modelSource": "https://github.com/danielgatis/rembg/releases/download/v0.0.0/u2netp.onnx",
+  "modelSha256": "309c8469258dda742793dce0ebea8e6dd393174f89934733ecc8b14c76f4ddd8",
+  "modelBytes": 4574861,
+  "modelMD5": "8e83ca70e441ab06c318d82300c84806",
+  "rembgSourceCommit": "e2c2e3f72701357b9bb3f2be32a4330d74ce8f47",
+  "u2netSourceCommit": "ac7e1c817ecab7c7dff5ce6b1abba61cd213ff29",
+  "runtimeLicenseSource": "https://raw.githubusercontent.com/microsoft/onnxruntime/v1.18.0/LICENSE",
+  "runtimeNoticesSource": "https://raw.githubusercontent.com/microsoft/onnxruntime/v1.18.0/ThirdPartyNotices.txt"
+}

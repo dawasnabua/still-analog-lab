@@ -1,0 +1,15 @@
+/* v7: scroll-first dial gestures, two-ring brush preview and local subject UI. */
+input[type=range]{touch-action:pan-y!important}
+.control.just-reset{background:#d5e39712;border-radius:5px}
+.control.just-reset output{color:#eee9dc}
+#brushCursor{border:1px dashed #d8b583;box-shadow:0 0 0 1px #0005;background:none}
+#brushCursor .brush-core-ring{position:absolute;top:50%;left:50%;width:var(--core-diameter,24px);height:var(--core-diameter,24px);transform:translate(-50%,-50%);border:1.5px solid #fff3d8;border-radius:50%;box-shadow:0 0 0 1px #0007}
+#brushCursor.erasing .brush-core-ring{border-style:dashed}
+#brushCursor::after{border-color:#fff3d8}
+.auto-subject{border-top:1px solid var(--line);padding-top:9px;margin-top:7px}
+.auto-subject .mask-heading{margin-bottom:7px}
+.auto-subject .mask-heading h3{font-size:20px}
+#autoSubjectButton{min-height:36px;font-size:11px;font-weight:600;padding:7px 10px}
+#autoSubjectStatus{font-size:9px;line-height:1.5;margin:5px 0 6px;color:var(--muted);overflow-wrap:anywhere}
+#subjectControls .control{grid-template-columns:110px minmax(0,1fr)}
+@media(max-width:340px){#subjectControls .control{grid-template-columns:92px minmax(0,1fr)}}

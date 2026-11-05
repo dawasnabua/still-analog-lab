@@ -1,21 +1,29 @@
 {
-  "version": "v7-public-1",
+  "version": "v8-public-1",
   "files": {
     ".nojekyll": {
       "bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
+    "FAST_MODEL_NOTICE.md": {
+      "bytes": 1866,
+      "sha256": "29135646a73bf06556ed7ea3589f3ca2dd9c9a9e715fa5946c4eab7652de7331"
+    },
     "README.md": {
-      "bytes": 1484,
-      "sha256": "dec2b8726f3c0e2c10cda44e1aa17a6dd7349745fef40e7d5966262fc91f7e67"
+      "bytes": 2718,
+      "sha256": "2b538990b956871db7c68059442894573ccdb654761d6c1e5dde253c320bf0cc"
     },
     "THIRD_PARTY_SUBJECT.md": {
-      "bytes": 1924,
-      "sha256": "f134f1f05fb9234eeef29651fcb1777279c83ceed49341a355dd529269c8e847"
+      "bytes": 2161,
+      "sha256": "71097b09b5d6722936f2fa5a541a6536b1916a97fed5621130a88d2fd7755d29"
     },
     "app.js": {
-      "bytes": 15018,
-      "sha256": "8c9358bb192c3a5cac10ffa3ebb52ab4009f98b97ab0bc74d1070812ed97a13e"
+      "bytes": 19970,
+      "sha256": "1fec090964cd8059fe642f3f5fcf7ac7f5e7540b097dfe675cf0d1000444e889"
+    },
+    "color-math-v8.js": {
+      "bytes": 5110,
+      "sha256": "136e07d9fd0cc520bbac4e0a886fe893f4f962c0c9f823550a37a7f7553f0136"
     },
     "compact.css": {
       "bytes": 3624,
@@ -29,13 +37,17 @@
       "bytes": 175704,
       "sha256": "bad0f27f0e4cb0c2dc893d8f223465afac5b80ccbfeb2ea602e1797647e612ab"
     },
+    "develop-v8.css": {
+      "bytes": 6343,
+      "sha256": "160b10d1aa966eef4ce12f6589f9e3bd34785bafd0f68b2a9fe37d10797edc52"
+    },
     "editor.js": {
-      "bytes": 21704,
-      "sha256": "ea54efbad58fe07fb5e2f599eb694f00f5865aa8c9fa0fc5863b4ccb576c9485"
+      "bytes": 24948,
+      "sha256": "87374bedbe2561bbbd9675ce636b8e99aa4e0ec08665513bec0aeb2e20b6f7da"
     },
     "gpu.js": {
-      "bytes": 10344,
-      "sha256": "e332db65799d13d20a8850c6bc8fe5ea15156fc2a82c5b375c1efc73fd2b50d9"
+      "bytes": 14356,
+      "sha256": "335ee7c521a6359fdee5b120e381c60d0ebbafa4846e4e6dec134b617b9531be"
     },
     "icons/apple-touch-icon.png": {
       "bytes": 8265,
@@ -54,8 +66,8 @@
       "sha256": "39597a2c2589803b29e58024e1e68a9f29ce12282a8e176eef16ce08e203a6c9"
     },
     "index.html": {
-      "bytes": 7745,
-      "sha256": "f17612582db77e74b22a4f0d592a62af667e6b8a8b0430268af0144cf58c9f65"
+      "bytes": 10689,
+      "sha256": "2986b5d3f377a0c8457a7d288af4b13882d51f466a1efc621158ae963f2e0b4b"
     },
     "lens.css": {
       "bytes": 5827,
@@ -65,9 +77,17 @@
       "bytes": 601,
       "sha256": "58e6de28c12000d673a5b029478cdec363c54e979f8e9a72ffaa4b0180e328aa"
     },
+    "models/u2netp-fast192.onnx": {
+      "bytes": 4574772,
+      "sha256": "fd4d94ac0c91a8f2425af5f7bd9600e8befc5b2590d5487eecd1b72736779727"
+    },
     "models/u2netp.onnx": {
       "bytes": 4574861,
       "sha256": "309c8469258dda742793dce0ebea8e6dd393174f89934733ecc8b14c76f4ddd8"
+    },
+    "reference-profiles-v8.json": {
+      "bytes": 3714,
+      "sha256": "07e5d28d84bb5fb2892ee06bb3c72c8a13b7bdd03a59c515c2b215e103665920"
     },
     "robots.txt": {
       "bytes": 26,
@@ -82,20 +102,24 @@
       "sha256": "6798a5481ba6a61c4a1e55ccebc3a16e2abc71821211c763afd6a2d889aa8bda"
     },
     "subject-ui.js": {
-      "bytes": 1154,
-      "sha256": "f22c81384b05921cae6e2769ad639fe6a67c4b3a613fef465c3f26c7b235508d"
+      "bytes": 3550,
+      "sha256": "d85ea1d1a58aed19e4e102cb83ef4404d5fd4f019275a62c0a41a40e08c6b9bf"
+    },
+    "subject-worker-fast.js": {
+      "bytes": 7212,
+      "sha256": "e2a715cb8ff10a71267fbe8279beb4abd6ec11632b4598717099b97060ce70c0"
     },
     "subject-worker.js": {
       "bytes": 4885,
       "sha256": "8fed43026aa77b1a59f7f860be0d364839fad8d65c77af0a56647f205430364e"
     },
     "sw.js": {
-      "bytes": 1640,
-      "sha256": "11d7671e431fd162d76d9ef8012bc9129fb6a508e122fefab60ceeda48cf01a3"
+      "bytes": 1876,
+      "sha256": "ab165a6b851c74a7cd1e0deff6bd8a7bee44de987e05281f3d62ee79eb3df7ab"
     },
     "symbols.js": {
-      "bytes": 2457,
-      "sha256": "d0f3b41f8408ba680afde33e7a43cf498c90da3b52b5b7007aa53dde537f1680"
+      "bytes": 3592,
+      "sha256": "a46763e374b116526a20f8dfe913cc0a2f5960633b44773ca6c92d1d2ddb5c8a"
     },
     "touch.css": {
       "bytes": 2789,
@@ -136,6 +160,10 @@
     "vendor/subject/rembg-u2netp-source.py": {
       "bytes": 2122,
       "sha256": "239e7ef52ed6eb53e0fcf191d9c6266d6299d4527b92bf6f384c37850498d8e2"
+    },
+    "wheels-v8.js": {
+      "bytes": 5411,
+      "sha256": "7e741c5bb5452a431d3fdc960e8af5e7b1a6210b3de3106b9eca7f8938563fd1"
     },
     "workspace.css": {
       "bytes": 2996,

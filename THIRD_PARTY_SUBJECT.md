@@ -30,3 +30,8 @@ Unsplash license: https://unsplash.com/license
 ## Model limitations
 
 This small model detects salient foreground, not a guaranteed semantic subject or perfect hair/alpha matting. Review and refine the mask. The application rejects nearly uniform inputs rather than presenting a geometric fallback as a detected subject. Browser SIMD/worker support is required for automatic segmentation. User-created mask edits and photos remain session-local unless exported.
+
+
+## Modified fast model
+
+The192-pixel variant retains the original learned weights and license. See FAST_MODEL_NOTICE.md for the modification notice, exact derived hash and quality limits. Canonical320 remains available as Detail mode.

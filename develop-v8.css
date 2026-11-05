@@ -1,0 +1,41 @@
+/* STILL 8 — compact film library, development and three-way grading. */
+aside{scroll-padding-top:62px}
+.tabs{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));position:sticky;top:-1px;z-index:5;background:var(--bg);padding:5px 0;border-bottom:1px solid var(--line)}
+.tabs button{min-width:0;min-height:36px;padding:5px 2px;font-size:10px;white-space:nowrap;letter-spacing:0}
+.lab-heading{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin:8px 0 7px}
+.lab-heading h2,.lab-heading h3{font:600 13px -apple-system,BlinkMacSystemFont,sans-serif;margin:0;letter-spacing:.1px}
+.lab-heading>span{font:8px monospace;letter-spacing:1px;color:var(--muted);white-space:nowrap}
+.film-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px;margin-bottom:6px}
+.film-grid button{position:relative;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:4px;text-align:left;min-height:54px;padding:8px 10px;border-radius:4px;overflow:hidden;border-left:3px solid #bda17a}
+.film-grid button[data-stock="2"]{border-left-color:#879d9e}.film-grid button[data-stock="3"]{border-left-color:#94b6b6}.film-grid button[data-stock="4"]{border-left-color:#d1b797}.film-grid button[data-stock="5"]{border-left-color:#ddd7ca}
+.film-grid .preset-label{font-size:10px;font-weight:650;letter-spacing:.15px}
+.film-grid small{font-size:8px;line-height:1.4;color:var(--muted)}
+.film-grid button:last-child{grid-column:1/-1;min-height:45px;flex-direction:row;align-items:center;justify-content:space-between;gap:10px}
+.film-grid button.selected,.reference-grid button.selected{border-color:var(--accent);background:#d5e39714;color:var(--ink)}
+#filmStatus{font-size:9px;line-height:1.5;margin:5px 0}
+.reference-library{border-top:1px solid var(--line);margin-top:9px;padding-top:2px}
+.reference-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}
+.reference-grid button{display:flex;flex-direction:column;justify-content:center;align-items:stretch;gap:8px;text-align:left;min-width:0;min-height:57px;padding:8px 7px;font-size:10px;border-radius:4px}
+.reference-grid .preset-label{line-height:1.2;font-size:10px;overflow-wrap:anywhere}
+.palette{display:flex;gap:2px;height:8px;width:100%;overflow:hidden;border-radius:1px}.palette i{height:8px;flex:1}
+#referenceStatus{font-size:9px;line-height:1.5;margin:6px 0 10px}
+.saved-library{border-top:1px solid var(--line);margin-top:12px;padding-top:9px}.saved-library>summary{font-size:11px;cursor:pointer;min-height:32px;padding:6px 0;color:var(--muted)}
+.saved-library .presets{display:flex;flex-wrap:wrap;margin:5px 0 9px}.saved-library .save{margin-top:7px}
+.develop-subtitle{font:8px monospace;letter-spacing:1.2px;color:var(--muted);border-top:1px solid var(--line);padding-top:12px;margin:9px 0 5px}
+.panel>.panelhead{margin-bottom:8px}.panel>.panelhead h2{font-size:20px}
+.detail-note{font-size:10px!important;line-height:1.6!important;margin:8px 0!important}
+.wheel-tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;margin:5px 0 10px}.wheel-tabs button{position:relative;font-size:10px;min-height:34px;padding:5px 2px;border-radius:4px;white-space:nowrap}
+.wheel-tabs button.active{border-color:var(--accent);background:#d5e39712}.wheel-tabs button.has-grade::after{content:'';position:absolute;right:4px;top:4px;width:3px;height:3px;background:#d5b48c;border-radius:50%}
+.wheel-workspace{display:grid;grid-template-columns:156px minmax(0,1fr);gap:12px;align-items:center;min-width:0;padding:1px 0 5px}
+.wheel-visual{display:flex;flex-direction:column;align-items:center;gap:7px}.wheel-visual>span{font:9px monospace;letter-spacing:.6px;color:var(--muted)}
+.grading-wheel{position:relative;width:156px;height:156px;border-radius:50%;touch-action:none;cursor:crosshair;border:5px solid #151612;outline:1px solid #48493c;box-shadow:inset 0 0 9px #0007;background:radial-gradient(closest-side,#898783 0%,#89878300 100%),conic-gradient(from 90deg,#df746d 0deg,#d4c15e 60deg,#83bf79 120deg,#5cb6b0 180deg,#7f94d7 240deg,#b985cf 300deg,#df746d 360deg)}
+.grading-wheel::before,.grading-wheel::after{content:'';position:absolute;pointer-events:none;background:#f5f1df40;left:50%;top:50%;transform:translate(-50%,-50%)}
+.grading-wheel::before{width:9px;height:1px}.grading-wheel::after{width:1px;height:9px}.grading-wheel:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.wheel-puck{position:absolute;width:13px;height:13px;border:2px solid #fbf4e8;background:#17181540;border-radius:50%;transform:translate(-50%,-50%);box-shadow:0 0 0 1px #191a17b3;pointer-events:none}
+.wheel-numeric{min-width:0}.wheel-numeric .control{display:block;min-height:48px;min-width:0}.wheel-numeric .control label{display:flex;flex-direction:row;justify-content:space-between;align-items:center;min-height:16px;font-size:10px;gap:4px}.wheel-numeric .control output{font-size:9px;margin:0;text-align:right;white-space:nowrap}.wheel-numeric .slider-row{display:block;min-width:0}.wheel-numeric input[type=range]{display:block;min-width:0;width:100%;height:32px;margin:0}
+.wheel-actions{display:flex;justify-content:space-between;gap:8px;margin:5px 0 6px}.wheel-actions button{font-size:9px;min-height:32px;padding:6px 8px}
+#gradingControls .control{grid-template-columns:112px minmax(0,1fr)}
+.quality-row{display:flex;justify-content:space-between;gap:8px;align-items:center;margin:3px 0 7px}.quality-row label{font-size:10px;color:var(--muted)}.quality-row select{font:10px -apple-system,BlinkMacSystemFont,sans-serif;min-height:34px;padding:5px 8px;background:var(--bg);border:1px solid var(--line);border-radius:4px;color:var(--ink);max-width:175px}
+.control:has(input:disabled){opacity:.45}.control:has(input:disabled) button{cursor:default}
+@media(max-width:360px){.wheel-workspace{grid-template-columns:140px minmax(0,1fr);gap:9px}.grading-wheel{width:140px;height:140px}.wheel-tabs button{font-size:9px}.film-grid .preset-label{font-size:9px}.film-grid small{font-size:7px}.tabs button{font-size:9px}.reference-grid button{padding:7px 5px}.reference-grid .preset-label{font-size:9px}}
+@media(min-width:781px){aside{width:auto;padding-left:20px;padding-right:20px}.tabs{top:-12px;padding-top:12px}.wheel-workspace{grid-template-columns:148px minmax(0,1fr);gap:10px}.grading-wheel{width:148px;height:148px}}
